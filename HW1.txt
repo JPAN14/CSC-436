@@ -48,37 +48,30 @@
     {
         position: relative;
     }
-
     .root-container .header 
     {
         position: relative;
     }
-
     .root-container .main 
     {
         position: relative;
     }
-
     .root-container .footer 
     {
         position: relative;
     }
-
     .startups-container 
     {
         background-color: gray;
     }
-
     .red 
     {
         background-image: red;
     }
-
     .blue 
     {
         background-image: blue;
     }
-
     .gold 
     {
         background-image: gold;
@@ -114,17 +107,14 @@
         	{
             	chicagoStartupsHTML.push('<div>' + startupName + '</div>');
         	});
-
         	$(".startups-container").html(chicagoStartupsHTML.join(""));
     });
-
     //HOMEWORK 1 PROBLEMS START
     // 1.CREATE A FUNCTION THAT REVERSES THE LIST OF STARTUPS ON CLICK OF THE REVERSE BUTTON
     $("#reverse").click( function (event) 
     {
         	$(".startups-container").append($( "div", ".startups-container").get().reverse());
     });
-
     // 2.CREATE A FUNCTION THAT REMOVES ALL SYMBOLS AND NUMBERS FROM COMPANY NAMES ON CLICK OF REMOVE SYMBOLS & NUMBERS BUTTON
     //   Stage$$$Bloc => StageBloc
     $("#remove-symbols-numbers").click( function (event) 
@@ -150,7 +140,7 @@
     		function()
     		{
         		$(this).css('background-color', 'red');
-    		});​
+    		});
     });
     // 5.CREATE A FUNCTION THAT RANDOMLY SELECTS A COLOR CLASS AND APPLIES IT TO EACH COMPANY NAME WHEN THE COLOR BUTTON IS CLICKED
     $("#random-color").click(function (event) 
@@ -159,7 +149,6 @@
         	{
            		$(".startups-container").removeClass(color);
         	});
-
         	$(".startups-container").addClass(colors[Math.floor(Math.random() * 3)]);
     });
     // 6.CREATE A FUNCTION THAT DISPLAYS STARTS AS INLINE ELEMENTS ON CLICK OF CONVERT TO INLINE BUTTON
@@ -169,6 +158,4 @@
         	$(".startups-container").append($("div", ".startups-container").toggleClass("inline"));
     });
     //HOMEWORK 1 PROBLEMS END
-
-
 </script>
