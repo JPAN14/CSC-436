@@ -160,7 +160,7 @@
            		$(".startups-container").removeClass(color);
         	});
 
-        	$(".startups-container").addClass(colors[Math.floor(Math.random() * 3)])
+        	$(".startups-container").addClass(colors[Math.floor(Math.random() * 3)]);
     });
     // 6.CREATE A FUNCTION THAT DISPLAYS STARTS AS INLINE ELEMENTS ON CLICK OF CONVERT TO INLINE BUTTON
     //#convert-inline
